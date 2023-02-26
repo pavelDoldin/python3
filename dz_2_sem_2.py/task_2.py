@@ -6,8 +6,9 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-from math import sqrt
-s = int(input('Введите число: '))
-p = int(input('Введите число: '))
-z = sqrt( (s/2)**2 - p )
-print( int( s/2 - z ), int( s/2 + z ) )
+x = int(input('Введите число: '))
+y = int(input('Введите число: '))
+for i in range(x):
+    for j in range(y):
+        if x == i + j and y == i * j:
+            print(i, j)
