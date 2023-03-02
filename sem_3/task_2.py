@@ -3,13 +3,13 @@
 # на K элементов вправо, K – положительное число.
 # [1, 2, 3, 4, 5, 6, 7]
         # Первое решение 
-# spisok = [1, 2, 3, 4, 5, 6, 7,]
-# k = int(input('Введите число сдвига: '))
-# temp = None
-# for i in range(0, k):
-#     for j in range(len(spisok)-1, 0, -1):
-#         temp = spisok[j]
-#         spisok[j] = spisok[j-1]
-#         spisok[j-1]= temp
+spisok = [1, 2, 3, 4, 5, 6, 7,]
+k = int(input('Введите число сдвига: '))
+temp = None
+for i in range(0, k):
+    for j in range(len(spisok)-1, 0, -1):
+        temp = spisok[j]
+        spisok[j] = spisok[j-1]
+        spisok[j-1]= temp
 # print(spisok)
         # Второе решение
