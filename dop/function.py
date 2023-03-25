@@ -31,12 +31,30 @@
 # не связаны с другими переменными с такимиже именем за пределами функции.
 # В функции имена переменных являются локальными.
 
-x = 50
+# x = 50
 
-def func(x):
-    print('x завен', x)
-    x = 2
-    print('Замена локального x', x)
+# def func(x):
+#     print('x завен', x)
+#     x = 2
+#     print('Замена локального x', x)
 
-func(x)
-print('x по-прежнему', x)
+# func(x)
+# print('x по-прежнему', x)
+
+            # nonlocal
+# def func_outer():
+#     x = 2
+#     print('x равно', x)
+#     def func_inner():
+#         nonlocal x
+#         x = 5
+#     func_inner()
+#     print('Локальное x сменилось на', x)
+# func_outer()
+
+            # покажет столько раз сколько запросишь
+def say(message = 1, times = 1):
+    print(message * times)
+
+say('Привет', 3)
+say('Мир', 10)
